@@ -1,0 +1,25 @@
+Players
+<div class='wrapper'>
+	<div class='container' [dragula]='"bag"' id='players'>
+			<div *ngFor='let player of players' >
+				<span class='name'>{{player.name}}</span>
+		</div>
+	</div>
+
+	<div 
+		class='container' 
+		[dragula]="'bag'" 
+		id='player1'
+		[class.over]=over1
+	>
+	</div>
+
+	<div 
+		class='container' 
+		[dragula]="'bag'" 
+		id='player2'
+		[class.over]=over2
+	>
+	</div>
+</div>
+
